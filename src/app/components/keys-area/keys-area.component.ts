@@ -6,7 +6,7 @@ import { Component, EventEmitter, OnInit, Output } from '@angular/core';
   styleUrls: ['./keys-area.component.scss']
 })
 export class KeysAreaComponent {
-  numbers = ['7', '8', '9', '/', '4', '5', '6', '*', '1', '2', '3', '-', '0', '.', '=', '+' ]
+  numbers = ['7', '8', '9', '/', '4', '5', '6', '*', '1', '2', '3', '-', '0', '.', '=', '+', 'C']
 
   @Output() readonly keySelected = new EventEmitter<string>();
   keyClicked(event: any) {

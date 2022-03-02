@@ -10,8 +10,12 @@ export class HomeComponent {
   resultOfOperation: string | undefined;
 
   setValForResultsSection(val: string) {
-   this.detailOfTheOperation += val;
-   this.resultOfOperation = eval(this.detailOfTheOperation as string)
+    if (val === 'C') {
+      this.detailOfTheOperation = '';
+      this.resultOfOperation = '';
+    } else {this.detailOfTheOperation += val;
+      this.resultOfOperation = eval(this.detailOfTheOperation as string)}
+   
   }
 
 }
