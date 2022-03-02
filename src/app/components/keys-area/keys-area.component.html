@@ -1,3 +1,5 @@
 <div class="keys-wraper">
-  <div *ngFor="let number of numbers" class="key">{{ number }}</div>
+  <div *ngFor="let elem of numbers" class="key" (click)="keyClicked($event)">
+    {{ elem }}
+  </div>
 </div>

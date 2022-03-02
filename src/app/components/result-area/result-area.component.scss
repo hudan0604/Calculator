@@ -18,5 +18,19 @@
     align-items: center;
     padding: 0 1rem;
     font-size: 1.6rem;
+    position: relative;
+
+    .detail {
+      position: absolute;
+      left: 1rem;
+      top: 0.3rem;
+      font-size: 1.3rem;
+      color: #4ca15a;
+    }
+
+    .result {
+      color: #4caf50;
+      font-size: 2.5rem;
+    }
   }
 }

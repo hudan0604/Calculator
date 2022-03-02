@@ -1,7 +1,11 @@
 <h1>Your super calculator</h1>
 
 <div class="Calculator">
-    <app-result-area></app-result-area>
-    <app-keys-area></app-keys-area>
+  <app-result-area
+    detail="{{ detailOfTheOperation }}"
+    result="{{ resultOfOperation }}"
+  ></app-result-area>
+  <app-keys-area
+    (keySelected)="setValForResultsSection($event)"
+  ></app-keys-area>
 </div>
-

@@ -1,15 +1,17 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss']
 })
-export class HomeComponent implements OnInit {
+export class HomeComponent {
+  detailOfTheOperation: string | undefined = '';
+  resultOfOperation: string | undefined;
 
-  constructor() { }
-
-  ngOnInit(): void {
+  setValForResultsSection(val: string) {
+   this.detailOfTheOperation += val;
+   this.resultOfOperation = eval(this.detailOfTheOperation as string)
   }
 
 }
