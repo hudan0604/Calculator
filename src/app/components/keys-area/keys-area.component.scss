@@ -1,0 +1,22 @@
+:host {
+  .keys-wraper {
+    height: 27rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    .key {
+      height: 6rem;
+      width: 8rem;
+      background: #605d5d;
+      border-radius: 4px;
+      font-size: 3rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      box-shadow: 10px 6px 8px #0a0909;
+      cursor: pointer;
+    }
+  }
+}

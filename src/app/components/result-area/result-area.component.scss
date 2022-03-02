@@ -1,0 +1,22 @@
+:host {
+  flex: 1;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+
+  .result-area {
+    height: 4.5rem;
+    background: #222020;
+    margin: auto;
+    width: 100%;
+    border-radius: 4px;
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 1rem;
+    font-size: 1.6rem;
+  }
+}
